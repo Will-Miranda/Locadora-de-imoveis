@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# Site de Vendas de Imóveis
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um site de vendas de imóveis desenvolvido com React para teste de habilidades, featuring navegação moderna e componentes reutilizáveis.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **React 19.1.0** - Biblioteca principal para construção da interface
+- **React Router DOM 7.7.0** - Gerenciamento de rotas e navegação
+- **Styled Components 6.1.19** - Estilização CSS-in-JS
+- **React Icons 5.5.0** - Biblioteca de ícones
+- **React Scripts 5.0.1** - Configuração de build e desenvolvimento
 
-### `npm start`
+## Estrutura do Projeto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── Components/          # Componentes reutilizáveis
+│   ├── Banner/         # Banner principal
+│   ├── Button/         # Botões customizados
+│   ├── Card/           # Cards de produtos/imóveis
+│   ├── Footer/         # Rodapé do site
+│   ├── Header/         # Cabeçalho com navegação
+│   ├── Input/          # Campos de input
+│   ├── TextArea/       # Áreas de texto
+│   └── TopBanner/      # Banner superior
+├── Pages/              # Páginas da aplicação
+│   ├── Cadastro/       # Página de cadastro
+│   ├── Error/          # Página de erro 404
+│   ├── Home/           # Página inicial
+│   ├── Imobi/          # Página de imóveis
+│   └── Login/          # Página de login
+├── routes/             # Configuração de rotas
+└── styles/             # Estilos globais
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Rotas da Aplicação
 
-### `npm test`
+- `/` - Página inicial (Home)
+- `/imovel` - Página de imóveis
+- `/login` - Página de login
+- `/cadastro` - Página de cadastro
+- `/*` - Página de erro 404
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instalação e Execução
 
-### `npm run build`
+### Pré-requisitos
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instalação
+```bash
+# Clone o repositório
+git clone <URL-do-repositório>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Entre no diretório do projeto
+cd "site de vendas"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Instale as dependências
+npm install
+# ou
+yarn install
+```
 
-### `npm run eject`
+### Executando o Projeto
+```bash
+# Inicie o servidor de desenvolvimento
+npm start
+# ou
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A aplicação estará disponível em [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Build para Produção
+```bash
+# Crie a versão otimizada para produção
+npm run build
+# ou
+yarn build
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Testes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+# Execute os testes
+npm test
+# ou
+yarn test
+```
 
-## Learn More
+## Funcionalidades
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Navegação SPA**: Single Page Application com rotas dinâmicas
+- **Layout Responsivo**: Interface adaptável para diferentes dispositivos
+- **Componentes Modularizados**: Arquitetura de componentes reutilizáveis
+- **Sistema de Autenticação**: Páginas de login e cadastro
+- **Catálogo de Imóveis**: Exibição de propriedades disponíveis
+- **Tratamento de Erros**: Página 404 personalizada
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Configuração
 
-### Code Splitting
+O projeto utiliza a configuração padrão do Create React App com as seguintes personalizações:
+- Styled Components para estilização
+- React Router para navegação
+- Estrutura de pastas organizada por funcionalidade
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licença
 
-### Analyzing the Bundle Size
+Este projeto é privado e desenvolvido para fins específicos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contribuição
 
-### Making a Progressive Web App
+Para contribuir com este projeto:
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adicionando nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contato
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para dúvidas ou suporte, entre em contato com a equipe de desenvolvimento.
